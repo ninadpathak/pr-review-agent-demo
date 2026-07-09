@@ -1,0 +1,9 @@
+{
+  "name": "pr-review-agent-demo",
+  "version": "1.0.0",
+  "description": "A tiny library the pr-review-agent watches. Real behavior, real tests.",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --test"
+  }
+}
