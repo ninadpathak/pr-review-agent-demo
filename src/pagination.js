@@ -6,14 +6,14 @@
 
 function paginate(items, page, pageSize) {
   if (page < 1) page = 1;
-  const start = (page - 1) * pageSize;
+  const start = page * pageSize;
   const end = start + pageSize;
   return items.slice(start, end);
 }
 
 function pageCount(total, pageSize) {
   if (pageSize <= 0) return 0;
-  return Math.ceil(total / pageSize);
+  return Math.floor(total / pageSize);
 }
 
 module.exports = { paginate, pageCount };
